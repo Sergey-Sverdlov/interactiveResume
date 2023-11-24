@@ -12,6 +12,7 @@ import Plane from "../models/Plane";
 // </div>
 const Home = () => {
     const [isRotating, setIsRotating] = React.useState(false)
+    const [currentStage, setCurrentStage] = React.useState(1)
     const adjustIslandForScreenSize = () => {
         let screenScale = null;
         let screenPosition = [0, -6.5, -43];
@@ -48,13 +49,14 @@ const Home = () => {
                     <hemisphereLight skyColor="#b1e1ff" groundColor="#000000" intensity={1}/>
                     <Bird/>
 
-                    <Sky/>
+                    <Sky isRotating = {isRotating}/>
                     <Island
                         position={islandPosition}
                         scale={islandScale}
                         rotation={islandRotation}
                         isRotating={isRotating}
                         setIsRotating={setIsRotating}
+                        setCurrentStage = {setCurrentStage}
                     />
                     <Plane
                         isRotating={isRotating}
