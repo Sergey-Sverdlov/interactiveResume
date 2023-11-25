@@ -4,6 +4,8 @@ import {Canvas} from "@react-three/fiber";
 import Loader from "../components/Loader";
 import Fox from "../models/Fox";
 import {Suspense} from "react";
+import useAlert from "../hooks/useAlert";
+import Alert from "../components/Alert";
 
 const Contact = () => {
     const [form, setForm] = useState({
@@ -15,6 +17,7 @@ const Contact = () => {
 
     const [isLoading, setIsLoading] = useState(false)
     const [currentAnimations, setCurrentAnimations] = useState('idle')
+    const {alert, showAlert, hideAlert } = useAlert()
     const handleChange = (e) => {
         setForm({
             ...form,
@@ -44,7 +47,13 @@ const Contact = () => {
             import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
         ).then(() => {
             setIsLoading(false);
+            showAlert({
+                text: "Сообщение отправлено успешно",
+                type: 'success'
+            })
+
             setTimeout(() => {
+                hideAlert()
                 setCurrentAnimations('idle')
                 setForm({
                     name: "",
@@ -52,16 +61,20 @@ const Contact = () => {
                     message: ""
                 })
             }, 3000)
-            //TODO
         }).catch((error) => {
             setIsLoading(false);
             setCurrentAnimations('idle')
+            showAlert({
+                text: "Сообщение отправлено с ошибкой",
+                type: 'danger'
+            })
             console.log(error)
         })
     }
     return (
         <section className="relative flex lg:flex-row
         flex-col max-container">
+            {alert.show && <Alert {...alert} />}
             <div className="flex-1 min-w-[50%] flex flex-col items-start">
                 <h1 className="head-text w-full">
                     Связаться со мной
