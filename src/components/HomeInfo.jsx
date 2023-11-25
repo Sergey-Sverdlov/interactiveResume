@@ -34,7 +34,7 @@ const renderContent = {
     ),
     4: (
         <InfoBox text="Всегда открыт к чему-то новому! Давай реализуем твои мечты!"
-                 link="/contacts" btnText="Связаться со мной"/>
+                 link="/contact" btnText="Связаться со мной"/>
     )
 }
 
