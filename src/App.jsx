@@ -5,7 +5,7 @@ import {Home, About, Projects, Contact} from "../src/pages/index"
 
 const App = () => {
     return (
-        <main className="bg-slate-300/20">
+        <main className="whitespace-nowrap overflow-hidden scrollbar-hide">
             <Router>
                 <Navbar/>
                 <Routes>

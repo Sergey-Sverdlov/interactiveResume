@@ -8,13 +8,13 @@ const About = () => {
             drop-shadow">Сергей!</span>
                 <br/>
                 Добро пожаловать на мое WEB-портфолио</h1>
-            <div className="mt-5 flex flex-col gap-3 text-slate-500">
-                <p>
-                    Обожаю Frontend разработку на React.JS и занимаюсь backend
-                    проектированием на Node.JS. <br/>
+            <div className="mt-5 flex flex-col gap-3 text-slate-500 ">
+                <p className="break-all border-2 h-[300px] break-keep break-words">
+                    Создаю Frontend разработку на React.JS и занимаюсь backend
+                    проектированием на Node.JS.
                     Преподаватель программирования для детей и взрослых по самым современным и
-                    востребованным направлениям в web-разработки. <br/>
-                    Более 10 реализованных проектов с использованием WEB-3 технологий. <br/>
+                    востребованным направлениям в web-разработки.
+                    Более 10 реализованных проектов с использованием WEB-3 технологий.
                     Выпускник МГТУ им. Баумана по специальности "Программная инженерия"
                 </p>
                 <div className="py-10 flex flex-col">
