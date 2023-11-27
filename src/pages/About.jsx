@@ -3,6 +3,7 @@ import {skills, experiences} from "../constants";
 
 import {VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import CTA from "../components/CTA";
 
 const About = () => {
     return (
@@ -13,11 +14,11 @@ const About = () => {
                 Добро пожаловать на мое WEB-портфолио</h1>
             <div className="mt-5 flex flex-col gap-3 text-slate-500 ">
                 <p className="break-all border-2 h-[300px] break-keep break-words">
-                    Создаю Frontend разработку на React.JS и занимаюсь backend
+                    Создаю Frontend SPA веб-сайты на React.JS и занимаюсь backend
                     проектированием на Node.JS.
                     Преподаватель программирования для детей и взрослых по самым современным и
                     востребованным направлениям в web-разработки.
-                    Более 10 реализованных проектов с использованием WEB-3 технологий.
+                    Более 10 реализованных собственных и коммерческих проектов с использованием WEB-3 технологий.
                     Выпускник МГТУ им. Баумана по специальности "Программная инженерия"
                 </p>
                 <div className="py-10 flex flex-col">
@@ -46,8 +47,8 @@ const About = () => {
                     <h3 className="subhead-text">Стаж работы</h3>
                     <div className="mt-5 flex flex-col gap-3 text-slate-500 ">
                         <p className="break-all border-2 h-[300px] break-keep break-words">
-                            У меня есть многолетний опыт в проектировании, разработки и внедрении WEB-технологий
-                            в самые разные проекты.
+                            Обладаю многолетним опытом в проектировании, разработки и внедрении WEB-технологий
+                            в самых различных отраслях.
                             Большое количество собственных и коммерческих проектов с использованием самых современных
                             WEB-3 технологий.
                             Являюсь выпускником университета им. Баумана по направлению "Программная инженерия"
@@ -69,7 +70,7 @@ const About = () => {
                                                 className="w-[60%] h-[60%] object-contain"
                                             />
                                         </div>}
-                                    iconStyle = {{ background: experience.iconBg }}
+                                    iconStyle={{background: experience.iconBg}}
                                     contentStyle={{
                                         borderBottom: '8px',
                                         borderStyle: 'solid',
@@ -101,8 +102,8 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <hr className="border-slate-200" />
-
+            <hr className="border-slate-200"/>
+            <CTA/>
         </section>
     );
 };
