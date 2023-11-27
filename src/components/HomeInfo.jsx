@@ -16,7 +16,7 @@ const renderContent = {
     1: (
         <h1 className="sm:text-xl sm:leading-snug text-center neo-brutalism-blue
         py-4 px-8 text-white mx-5">
-            Меня зовут <span className="font-bold">Сергей!</span> <br/> Добро пожаловать!
+            Меня зовут <span className="font-bold">Сергей!</span> <br/> Добро пожаловать на мою персональную страницу!
             <br/>
             Full-Stack React + Node.js разработчик
         </h1>
