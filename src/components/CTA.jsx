@@ -4,11 +4,11 @@ import {Link} from "react-router-dom";
 const CTA = () => {
     return (
         <section className="cta">
-            <p className="cta-text">
+            <p className="cta-text flex justify-center gap-8 items-center">
                 Есть задание с которым нужно помочь?
                 <br className="sm:block hidden" />
-                Я всегда на связи и готов тебе помочь!
-                <Link to='/contact' className="btn">
+                Давай поскорее начнем!
+                <Link to='/contact' className="btn flex justify-center items-center w-fit h-fit">
                     Связаться со мной
                 </Link>
             </p>

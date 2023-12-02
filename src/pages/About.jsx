@@ -13,7 +13,7 @@ const About = () => {
                 <br/>
                 Добро пожаловать на мое WEB-портфолио</h1>
             <div className="mt-5 flex flex-col gap-3 text-slate-500 ">
-                <p className="break-all border-2 h-[300px] break-keep break-words">
+                <p>
                     Создаю Frontend SPA веб-сайты на React.JS и занимаюсь backend
                     проектированием на Node.JS.
                     Преподаватель программирования для детей и взрослых по самым современным и
@@ -46,7 +46,7 @@ const About = () => {
                 <div className="py-16">
                     <h3 className="subhead-text">Стаж работы</h3>
                     <div className="mt-5 flex flex-col gap-3 text-slate-500 ">
-                        <p className="break-all border-2 h-[300px] break-keep break-words">
+                        <p>
                             Обладаю многолетним опытом в проектировании, разработки и внедрении WEB-технологий
                             в самых различных отраслях.
                             Большое количество собственных и коммерческих проектов с использованием самых современных

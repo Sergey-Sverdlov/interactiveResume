@@ -14,7 +14,7 @@ const useAlert = () => {
     const hideAlert = () => setAlert({
         show: false,
         text: '',
-        danger: 'danger'
+        type: 'danger'
     })
     return {alert, showAlert, hideAlert}
 };
