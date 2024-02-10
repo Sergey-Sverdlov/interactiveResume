@@ -25,16 +25,16 @@ const renderContent = {
         <InfoBox text="Веб-разработчик на React и Node.js.
                 Преподаватель программирования.
                  Выпускник факультета ИУ7 МГТУ им.Баумана"
-                 link="/about" btnText="Обо мне"/>
+                 link="/interactiveResume/about" btnText="Обо мне"/>
     ),
     3: (
         <InfoBox text="Более 10 собственных проектов WEB-3.
         Занимался разработкой API и базами данных в командах и индивидуально."
-                 link="/projects" btnText="Увидеть портфолио"/>
+                 link="/interactiveResume/projects" btnText="Увидеть портфолио"/>
     ),
     4: (
         <InfoBox text="Всегда открыт к чему-то новому! Давай реализуем твои мечты!"
-                 link="/contact" btnText="Связаться со мной"/>
+                 link="/interactiveResume/contact" btnText="Связаться со мной"/>
     )
 }
 
