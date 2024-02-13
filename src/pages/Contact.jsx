@@ -37,6 +37,24 @@ const Contact = () => {
         e.preventDefault();
         setIsLoading(true);
         setCurrentAnimations('hit');
+        emailjs.init({
+            publicKey: 'eNYo3zYw_pgGm3SYu',
+            // Do not allow headless browsers
+            blockHeadless: true,
+            blockList: {
+                // Block the suspended emails
+                list: [],
+                // The variable contains the email address
+                watchVariable: 'userEmail',
+            },
+            limitRate: {
+                // Set the limit rate for the application
+                id: 'app',
+                // Allow 1 request per 10s
+                throttle: 10000,
+            },
+        });
+
         emailjs.send(
             'service_lbb4cjj',
             'template_xinipvw',
