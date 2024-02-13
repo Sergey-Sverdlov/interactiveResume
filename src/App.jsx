@@ -6,7 +6,7 @@ import {Home, About, Projects, Contact} from "../src/pages/index"
 const App = () => {
     return (
         <main className="bg-slate-300/20 h-full ">
-            <Router basename="/interactiveResume">
+            <Router>
                 <Navbar/>
                 <Routes>
                     <Route path="/interactiveResume/" element={<Home/>}/>
