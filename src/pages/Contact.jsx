@@ -47,7 +47,7 @@ const Contact = () => {
                 to_email: 'sverdlov2910@gmail.com',
                 message: form.message
             },
-            import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
+            'eNYo3zYw_pgGm3SYu',
         ).then(() => {
             setIsLoading(false);
             showAlert({
