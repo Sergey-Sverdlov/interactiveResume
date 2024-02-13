@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import {meta, shopify, starbucks, tesla} from "../assets/images";
 import {
     car,
     contact,
@@ -23,13 +23,19 @@ import {
     summiz,
     tailwindcss,
     threads,
-    typescript
+    typescript,
+    postgresql,
+    nginx,
+    qoollo,
+    school,
+    bmstu,
+    telegram
 } from "../assets/icons";
 
 export const skills = [
     {
         imageUrl: css,
-        name: "CSS",
+        name: "CSS3",
         type: "Frontend",
     },
     {
@@ -61,11 +67,6 @@ export const skills = [
         imageUrl: mongodb,
         name: "MongoDB",
         type: "Database",
-    },
-    {
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
     },
     {
         imageUrl: mui,
@@ -106,60 +107,65 @@ export const skills = [
         imageUrl: typescript,
         name: "TypeScript",
         type: "Frontend",
+    },
+    {
+        imageUrl: postgresql,
+        name: "PostgreSQL",
+        type: "Backend"
+    },
+    {
+        imageUrl: nginx,
+        name: "NGINX",
+        type: "Backend"
     }
 ];
 
 export const experiences = [
     {
         title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        company_name: "Qoollo",
+        icon: qoollo,
         iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
+        date: "Июль 2023 - Декабрь 2023",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Разработка интерфейсов с применением современных frontend - технологий, таких как React, NextJS, Redux ToolKit и TailWind",
+            "Взаимодействие с Backend (Rest API, работа с JWT токенами при авторизации и выборе роли пользователей, отправка и валидация форм)",
+            "Верстка макетов различной сложности, используя технологии БЭМ, препроцессоры SCSS, модули CSS",
+            "Кроссбраузерная верстка.",
+            "Работа с современными WEB API и JS библиотеками",
+            "Помощь в написании серверной части на Node JS и Express",
+            "Pixel Perfect"
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
+        title: "Преподаватель программирования",
+        company_name: "ГБОУ 1517",
+        icon: school,
         iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
+        date: "Сентябрь 2022 - Февраль 2024",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Объяснение материала.",
+            "Обучение алгоритмов и разработки программ на языке Python и JavaScript",
+            "Подготовка к выпускным экзаменам по информатике и олимпиадам",
+            "Рефакторинг чужого кода",
+            "Тестирование и объяснение ошибок",
+            "Обучение технологиям WEB-разработки для создания SPA приложений"
         ],
     },
     {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
+        title: "Full stack Разработчик",
+        company_name: "МГТУ им Н.Э.Баумана",
+        icon: bmstu,
         iconBg: "#b7e4c7",
         date: "Jan 2022 - Jan 2023",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Создание SPA приложения согласно REST API с подключением к собственной базе данных PostgreSQL и написанием " +
+            "документацией Swagger",
+            "Разработка backend части приложение на Node.js с использованием ORM Sequelize, авторизацией через JWT токен",
+            "Написание асинхронного кода для запросов к базе данных и последующая отправка на сайт",
+            "Разработка интерфейса приложения на React, используя TypeScript, TailWind и MUI",
+            "Создание макетов сайта в Figma с компонентами",
+            "Использование SASS, HTML, CSS"
         ],
     },
 ];
@@ -168,17 +174,17 @@ export const socialLinks = [
     {
         name: 'Contact',
         iconUrl: contact,
-        link: '/contact',
+        link: '/interactiveResume/contact',
     },
     {
         name: 'GitHub',
         iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
+        link: 'https://github.com/Sergey-Sverdlov',
     },
     {
-        name: 'LinkedIn',
-        iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+        name: 'Telegram',
+        iconUrl: telegram,
+        link: 'https://t.me/serega_sverdlov',
     }
 ];
 
@@ -186,43 +192,75 @@ export const projects = [
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
+        name: 'Магазин курсов',
+        description: 'Rest API для магазина курсов с возможностью авторизации через JWT токен ' +
+            'и доступом управления к курсам у администратора',
+        link: 'https://github.com/Sergey-Sverdlov/APICourse',
     },
     {
         iconUrl: threads,
         theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
+        name: 'Страница современной методы оплаты',
+        description: 'Сайт, содержащий информацию о новом методе оплаты, написанный на React.JS',
+        link: 'https://github.com/Sergey-Sverdlov/InnovPay',
     },
     {
         iconUrl: car,
         theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+        name: 'Аниме фильмы',
+        description: 'Приложение для просмотра популярных аниме, использующее фреймфорк Next Js 13.',
+        link: 'https://github.com/Sergey-Sverdlov/NextJS',
     },
     {
         iconUrl: snapgram,
         theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
+        name: 'Сервис аренды автомобилей',
+        description: 'Сервис для аренды автомобиля с возможностью фильтрации и выбора нужного авто на определенный срок.',
+        link: 'https://github.com/Sergey-Sverdlov/CarsApp',
     },
     {
         iconUrl: estate,
         theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
+        name: 'Интернет-магазин ',
+        description: 'Разработан интернет-магазин с возможностью добавлением товара. Используется TypeScript и React.JS.',
+        link: 'https://github.com/Sergey-Sverdlov/ShopReactApp',
     },
     {
         iconUrl: summiz,
         theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
-    }
+        name: 'Автомобили',
+        description: 'Приложения для просмотра информации о популярных автомобилях.',
+        link: 'https://github.com/Sergey-Sverdlov/CarsPageLayout',
+    },
+    {
+        iconUrl: summiz,
+        theme: 'btn-back-yellow',
+        name: 'Университеты',
+        description: 'Полноценный сервис для просмотра информации и сравнения различных университетов с возможностью ' +
+            'регистрации и личным кабинетом.',
+        link: 'https://github.com/Sergey-Sverdlov/DataBaseUniversity',
+    },
+    {
+        iconUrl: summiz,
+        theme: 'btn-back-yellow',
+        name: 'Напиши.Пост',
+        description: 'Сервис, позволяющий просматривать и добавливать собственные посты.',
+        link: 'https://github.com/Sergey-Sverdlov/ReactApiPosts',
+    },
+    {
+        iconUrl: summiz,
+        theme: 'btn-back-yellow',
+        name: 'Планирование задач',
+        description: 'Сервис, позволяющий добавлять дела, изменять их и удалять с использованием технологии Redux.',
+        link: 'https://github.com/Sergey-Sverdlov/Redux',
+    },
+    {
+        iconUrl: summiz,
+        theme: 'btn-back-yellow',
+        name: 'Погода',
+        description: 'Веб-сайт для просмотра погоды в выбранном городе.',
+        link: 'https://github.com/Sergey-Sverdlov/WeatherApp',
+    },
+
+
 ];

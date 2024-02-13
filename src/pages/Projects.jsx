@@ -12,9 +12,9 @@ const Projects = () => {
             <div className="mt-5 flex flex-col gap-3 text-slate-500 ">
                 <p>
                     Создаю Frontend SPA веб-сайты на React.JS и занимаюсь backend
-                    проектированием на Node.JS. На этой страницу указаны самые основные мои проекты, большинство из них
+                    проектированием на Node.JS. В данном разделе указана чать реализованных проектов, большинство из них
                     с открытым исходным кодом.
-                    Преподаватель программирования для детей и взрослых по самым современным и
+                    Преподаю программирования для детей и взрослых по самым современным и
                     востребованным направлениям в web-разработки.
                     Более 10 реализованных собственных и коммерческих проектов с использованием WEB-3 технологий.
                     Всегда готов к сотрудничеству!
@@ -34,14 +34,14 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className="mt-5 flex flex-col">
-                            <h4 className="text-2xl font-poppins font-semibold">
+                            <h4 className="text-2xl font-poppins font-semibold h-[50px]">
                                 {project.name}
                             </h4>
-                            <p className="mt-2 text-slate-500">
+                            <p className="mt-5 text-slate-500 h-[100px]">
                                 {project.description}
                             </p>
-                            <div className="mt-5 flex items-center gap-2
-                            font-poppins">
+                            <div className="mt-5 flex items-center gap-5
+                            font-poppins justify-between">
                                 <Link
                                     to={project.link}
                                     target="_blank"
@@ -53,6 +53,20 @@ const Projects = () => {
                                         alt="arrow"
                                         className="w-4 h-4 object-contain"
                                     />
+                                    <span>Открыть на Github</span>
+                                </Link>
+                                <Link
+                                    to={project.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="font-semibold text-blue-600 hidden"
+                                >
+                                    <img
+                                        src={arrow}
+                                        alt="arrow"
+                                        className="w-4 h-4 object-contain"
+                                    />
+                                    <span>Посетить веб-сайт</span>
                                 </Link>
                             </div>
                         </div>

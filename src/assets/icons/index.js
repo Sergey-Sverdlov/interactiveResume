@@ -26,6 +26,13 @@ import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
+import github_link from './github_link.svg'
+import postgresql from './postgresql.svg'
+import nginx from './nginx.svg'
+import qoollo from './qoollo .svg'
+import school from './school.svg'
+import bmstu from './BMSTU.svg'
+import telegram from './telegram.svg'
 
 export {
     css,
@@ -55,5 +62,12 @@ export {
     arrow,
     contact,
     soundon,
-    soundoff
+    soundoff,
+    github_link,
+    postgresql,
+    nginx,
+    qoollo,
+    school,
+    bmstu,
+    telegram,
 }

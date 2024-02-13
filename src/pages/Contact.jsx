@@ -118,7 +118,7 @@ const Contact = () => {
                             <textarea
                                 name="message"
                                 className="textarea"
-                                placeholder="Напиши, чем я могу тебе помочь"
+                                placeholder="Напишите, чем я могу Вам помочь"
                                 required
                                 value={form.message}
                                 onChange={handleChange}
