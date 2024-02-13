@@ -25,10 +25,6 @@ const Navbar = () => {
                          className={({isActive}) => !isActive ? 'text-blue-900 ' : 'text-black'}>
                     <p>Связаться со мной</p>
                 </NavLink>
-                <a href="https://github.com/Sergey-Sverdlov" target="_blank"
-                         className={'text-black-900'}>
-                    <p>Github Profile</p>
-                </a>
             </nav>
         </header>
     );

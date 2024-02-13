@@ -186,7 +186,6 @@ const Contact = () => {
                             />
                             {socialLink.name}
                         </Link>
-
                     </div>
                 ))}
             </div>

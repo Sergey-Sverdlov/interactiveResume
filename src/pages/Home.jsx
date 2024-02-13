@@ -7,6 +7,7 @@ import Sky from "../models/Sky";
 import Bird from "../models/Bird";
 import Plane from "../models/Plane";
 import HomeInfo from "../components/HomeInfo";
+import CTA from "../components/CTA";
 
 const Home = () => {
     const [isRotating, setIsRotating] = React.useState(false)
@@ -67,6 +68,7 @@ const Home = () => {
                         position={planePosition}/>
                 </Suspense>
             </Canvas>
+            <CTA />
         </section>)
 }
 

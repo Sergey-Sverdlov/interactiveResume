@@ -1,9 +1,10 @@
 import React from 'react';
-import {skills, experiences} from "../constants";
+import {skills, experiences, socialLinks} from "../constants";
 
 import {VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import CTA from "../components/CTA";
+import {Link} from "react-router-dom";
 
 const About = () => {
     return (
@@ -105,6 +106,7 @@ const About = () => {
             </div>
             <hr className="border-slate-200"/>
             <CTA/>
+
         </section>
     );
 };
