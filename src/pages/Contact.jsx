@@ -38,8 +38,8 @@ const Contact = () => {
         setIsLoading(true);
         setCurrentAnimations('hit');
         emailjs.send(
-            import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-            import.meta.env.VITE_APP_EMAILJS_TEMLATE_ID,
+            'service_lbb4cjj',
+            'template_xinipvw',
             {
                 from_name: form.name,
                 to_name: "Sergei",
