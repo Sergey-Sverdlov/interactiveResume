@@ -203,6 +203,7 @@ export const projects = [
         name: 'Страница современной методы оплаты',
         description: 'Сайт, содержащий информацию о новом методе оплаты, написанный на React.JS',
         link: 'https://github.com/Sergey-Sverdlov/InnovPay',
+        WebSite: 'https://innovpay.netlify.app',
     },
     {
         iconUrl: car,
@@ -210,6 +211,7 @@ export const projects = [
         name: 'Аниме фильмы',
         description: 'Приложение для просмотра популярных аниме, использующее фреймфорк Next Js 13.',
         link: 'https://github.com/Sergey-Sverdlov/NextJS',
+        WebSite: 'https://animenextjs.netlify.app',
     },
     {
         iconUrl: snapgram,
@@ -217,6 +219,7 @@ export const projects = [
         name: 'Сервис аренды автомобилей',
         description: 'Сервис для аренды автомобиля с возможностью фильтрации и выбора нужного авто на определенный срок.',
         link: 'https://github.com/Sergey-Sverdlov/CarsApp',
+        WebSite: 'https://carsfilterapp.netlify.app',
     },
     {
         iconUrl: estate,
@@ -231,6 +234,7 @@ export const projects = [
         name: 'Автомобили',
         description: 'Приложения для просмотра информации о популярных автомобилях.',
         link: 'https://github.com/Sergey-Sverdlov/CarsPageLayout',
+        WebSite: 'https://carspagelayout.netlify.app',
     },
     {
         iconUrl: summiz,
@@ -246,6 +250,7 @@ export const projects = [
         name: 'Напиши.Пост',
         description: 'Сервис, позволяющий просматривать и добавливать собственные посты.',
         link: 'https://github.com/Sergey-Sverdlov/ReactApiPosts',
+        WebSite: 'https://createposts.netlify.app',
     },
     {
         iconUrl: summiz,
@@ -253,6 +258,7 @@ export const projects = [
         name: 'Планирование задач',
         description: 'Сервис, позволяющий добавлять дела, изменять их и удалять с использованием технологии Redux.',
         link: 'https://github.com/Sergey-Sverdlov/Redux',
+        WebSite: 'https://todoreduxposts.netlify.app',
     },
     {
         iconUrl: summiz,
@@ -260,6 +266,15 @@ export const projects = [
         name: 'Погода',
         description: 'Веб-сайт для просмотра погоды в выбранном городе.',
         link: 'https://github.com/Sergey-Sverdlov/WeatherApp',
+        WebSite: 'https://weather-siteapp.netlify.app',
+    },
+    {
+        iconUrl: summiz,
+        theme: 'btn-back-yellow',
+        name: 'Генератор случайных имен',
+        description: 'Приложение для выбора случайного имени.',
+        link: 'https://github.com/Sergey-Sverdlov/WebPack',
+        WebSite: 'https://generaternames.netlify.app',
     },
 
 

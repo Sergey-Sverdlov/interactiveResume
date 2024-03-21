@@ -55,11 +55,11 @@ const Projects = () => {
                                     />
                                     <span>Открыть на Github</span>
                                 </Link>
-                                <Link
-                                    to={project.link}
+                                {project.WebSite && <Link
+                                    to={project.WebSite}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="font-semibold text-blue-600 hidden"
+                                    className="font-semibold text-blue-600"
                                 >
                                     <img
                                         src={arrow}
@@ -67,7 +67,7 @@ const Projects = () => {
                                         className="w-4 h-4 object-contain"
                                     />
                                     <span>Посетить веб-сайт</span>
-                                </Link>
+                                </Link> }
                             </div>
                         </div>
                     </div>
