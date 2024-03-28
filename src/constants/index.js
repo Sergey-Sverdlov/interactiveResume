@@ -34,6 +34,21 @@ import {
 
 export const skills = [
     {
+        imageUrl: typescript,
+        name: "TypeScript",
+        type: "Frontend",
+    },
+    {
+        imageUrl: react,
+        name: "React",
+        type: "Frontend",
+    },
+    {
+        imageUrl: redux,
+        name: "Redux",
+        type: "State Management",
+    },
+    {
         imageUrl: css,
         name: "CSS3",
         type: "Frontend",
@@ -42,6 +57,21 @@ export const skills = [
         imageUrl: express,
         name: "Express",
         type: "Backend",
+    },
+    {
+        imageUrl: javascript,
+        name: "JavaScript",
+        type: "Frontend",
+    },
+    {
+        imageUrl: nextjs,
+        name: "Next.js",
+        type: "Frontend",
+    },
+    {
+        imageUrl: tailwindcss,
+        name: "Tailwind CSS",
+        type: "Frontend",
     },
     {
         imageUrl: git,
@@ -58,11 +88,7 @@ export const skills = [
         name: "HTML",
         type: "Frontend",
     },
-    {
-        imageUrl: javascript,
-        name: "JavaScript",
-        type: "Frontend",
-    },
+
     {
         imageUrl: mongodb,
         name: "MongoDB",
@@ -73,39 +99,16 @@ export const skills = [
         name: "Material-UI",
         type: "Frontend",
     },
-    {
-        imageUrl: nextjs,
-        name: "Next.js",
-        type: "Frontend",
-    },
+
     {
         imageUrl: nodejs,
         name: "Node.js",
         type: "Backend",
     },
-    {
-        imageUrl: react,
-        name: "React",
-        type: "Frontend",
-    },
-    {
-        imageUrl: redux,
-        name: "Redux",
-        type: "State Management",
-    },
+
     {
         imageUrl: sass,
         name: "Sass",
-        type: "Frontend",
-    },
-    {
-        imageUrl: tailwindcss,
-        name: "Tailwind CSS",
-        type: "Frontend",
-    },
-    {
-        imageUrl: typescript,
-        name: "TypeScript",
         type: "Frontend",
     },
     {
@@ -123,18 +126,43 @@ export const skills = [
 export const experiences = [
     {
         title: "React.js Developer",
-        company_name: "Qoollo",
+        company_name: "QOOLLO",
         icon: qoollo,
         iconBg: "#accbe1",
-        date: "Июль 2023 - Декабрь 2023",
+        date: "Октябрь 2022 - Декабрь 2023",
         points: [
-            "Разработка интерфейсов с применением современных frontend - технологий, таких как React, NextJS, Redux ToolKit и TailWind",
-            "Взаимодействие с Backend (Rest API, работа с JWT токенами при авторизации и выборе роли пользователей, отправка и валидация форм)",
-            "Верстка макетов различной сложности, используя технологии БЭМ, препроцессоры SCSS, модули CSS",
-            "Кроссбраузерная верстка.",
-            "Работа с современными WEB API и JS библиотеками",
-            "Помощь в написании серверной части на Node JS и Express",
-            "Pixel Perfect"
+            "Реализовал интерфейс авторизации пользователя в личном кабинете с использованием React,\n" +
+            "TypeScript, Redux для 80 человек в компании.",
+            "Спроектировал backend и frontend CRM сервиса для сотрудников на Express и React с загрузкой и\n" +
+            "получением информации о клиентах и результатах взаимодействия с ними (Rest API, JWT токены)",
+            "Переделал MPA веб-приложение в SPA для просмотра списка дел, увеличил вовлеченность\n" +
+            "пользователей на 20%.",
+            "Оптимизировал серверную часть на Node JS для API согласно документации Swagger, ускорил\n" +
+            "обработку запросов на 5%.",
+            "Создал адаптивные версии веб-приложения списка дел для различных устройств, увеличил количество\n" +
+            "пользователей на 10% и среднее время пребывания на 35%.",
+            "Произвел SEO оптимизацию проекта, улучшил метрики Web Vitals на 15% и увеличил usability сайта на\n" +
+            "10%.",
+            "Принимал участие в создании стоматологического проекта на Three js для более 200 стоматологий.",
+            "Переписал устаревшие классовые компоненты на функциональные, улучшил читаемость кода.",
+            "Исправил ошибки анимации компонента при scroll и drag and drop, возникающие у 30% пользователей.",
+            "Тестировал код компонентов и бизнес-логики, исправил более 30 критических ошибок.",
+        ],
+    },
+    {
+        title: "Full stack Разработчик",
+        company_name: "МГТУ им Н.Э.Баумана",
+        icon: bmstu,
+        iconBg: "#b7e4c7",
+        date: "Август 2022 - Декабрь 2022",
+        points: [
+            "Создал SPA приложение для покупки образовательных курсов согласно REST API с подключением к\n" +
+            "базе данных PostgreSQL и написал документацию Swagger. Сервисом воспользовались более 100\n" +
+            "студентов.",
+            "Разработал backend архитектуру приложения на Node.js с использованием ORM Sequelize,\n" +
+            "авторизацией̆ через JWT токен для эффективного взаимодействие с проектом.",
+            "Написал запросы к базе данных с асинхронной загрузкой сайта, ускорил работу проекта на 30%.",
+            "Создал макеты приложения для различных устройств в Figma с анимацией и переходами.",
         ],
     },
     {
@@ -152,22 +180,7 @@ export const experiences = [
             "Обучение технологиям WEB-разработки для создания SPA приложений"
         ],
     },
-    {
-        title: "Full stack Разработчик",
-        company_name: "МГТУ им Н.Э.Баумана",
-        icon: bmstu,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Создание SPA приложения согласно REST API с подключением к собственной базе данных PostgreSQL и написанием " +
-            "документацией Swagger",
-            "Разработка backend части приложение на Node.js с использованием ORM Sequelize, авторизацией через JWT токен",
-            "Написание асинхронного кода для запросов к базе данных и последующая отправка на сайт",
-            "Разработка интерфейса приложения на React, используя TypeScript, TailWind и MUI",
-            "Создание макетов сайта в Figma с компонентами",
-            "Использование SASS, HTML, CSS"
-        ],
-    },
+
 ];
 
 export const socialLinks = [
