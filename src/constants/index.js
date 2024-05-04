@@ -237,9 +237,10 @@ export const projects = [
     {
         iconUrl: estate,
         theme: 'btn-back-black',
-        name: 'Интернет-магазин ',
+        name: 'Магазин у компьютера',
         description: 'Разработан интернет-магазин с возможностью добавлением товара. Используется TypeScript и React.JS.',
-        link: 'https://github.com/Sergey-Sverdlov/ShopReactApp',
+        link: 'https://github.com/Sergey-Sverdlov/ShopTypescript',
+        WebSite: 'https://main--sergei-shop.netlify.app',
     },
     {
         iconUrl: summiz,
