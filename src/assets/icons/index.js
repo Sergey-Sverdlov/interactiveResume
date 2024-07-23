@@ -33,6 +33,7 @@ import qoollo from './qoollo .svg'
 import school from './school.svg'
 import bmstu from './BMSTU.svg'
 import telegram from './telegram.svg'
+import eco from './ECO.svg'
 
 export {
     css,
@@ -70,4 +71,5 @@ export {
     school,
     bmstu,
     telegram,
+    eco
 }
