@@ -1,4 +1,3 @@
-import {meta, shopify, starbucks, tesla} from "../assets/images";
 import {
     car,
     contact,
@@ -9,9 +8,7 @@ import {
     github,
     html,
     javascript,
-    linkedin,
     mongodb,
-    motion,
     mui,
     nextjs,
     nodejs,
@@ -30,7 +27,7 @@ import {
     school,
     bmstu,
     telegram,
-    eco
+    eco, reactNative
 } from "../assets/icons";
 
 export const skills = [
@@ -42,6 +39,11 @@ export const skills = [
     {
         imageUrl: react,
         name: "React",
+        type: "Frontend",
+    },
+    {
+        imageUrl: reactNative,
+        name: "React Native",
         type: "Frontend",
     },
     {
